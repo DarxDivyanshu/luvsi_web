@@ -1,0 +1,8 @@
+.header__toolbar {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .header__title {
+    flex-grow: 1;
+  }
