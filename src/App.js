@@ -3,7 +3,6 @@ import Header from "./components/Header";
 import OTPInput from "./components/OTPInput";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "./index.css";
-
 import MobileNo from "./components/MobileNo";
 import Home from "./components/Home";
 import ForgetPassword from "./components/ForgetPassword";
@@ -16,9 +15,9 @@ import ProfileForm from "./components/ProfileForm";
 import Dashboard from "./components/Dashboard";
 import ChatContainer from "./components/ChatContainer";
 import ProfileSection from "./components/ProfileSection";
-import VideoCallComponent from "./components/Video Chat/VideoChat";
 import MapComponent from "./components/MapComponent";
 import SwipeButton from "./components/SwipeButton";
+import VideoCallStart from "./components/Video Chat/VideoCallStart";
 function App() {
   return (
     <div className="App grid-container">
@@ -37,7 +36,7 @@ function App() {
           <Route exact path="/profilesection" element={<ProfileSection/>} />
           <Route exact path="/dashboard" element={<Dashboard/>} />
           <Route exact path="/chat" element={<ChatContainer/>} />
-          <Route exact path="/video-call" element={<VideoCallComponent/>} />
+          <Route exact path="/video-call" element={<VideoCallStart/>} />
           <Route exact path="/map" element={<MapComponent/>} />
           <Route exact path="/luvsiCard" element={<><LuvsiCards/> 
           <SwipeButton/></>} />
